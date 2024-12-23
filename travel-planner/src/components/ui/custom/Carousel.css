@@ -1,0 +1,50 @@
+.carousel-container{
+    padding-top: 20px;
+}
+
+body{
+    overflow-x: hidden; 
+}
+  .carousel-image {
+    width: 100%;  /* Ensure the images take full width of their container */
+    height: auto;  /* Maintain aspect ratio by default */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+  }
+  
+  /* Media query for screens larger than 1200px (e.g., desktops) */
+  @media (min-width: 1200px) {
+    .carousel-image {
+      width: 80%;  /* Limit the width of the image */
+      height: 400px;  /* Set height to 50px for large screens */
+      margin: 0 auto;
+      padding: 30px;
+    }
+  }
+  
+  /* Specific media query for very large screens (1600px) */
+  @media (min-width: 1600px) {
+    .carousel-image {
+      width: 100%;  /* Limit width to 60% on very large screens */
+      height: 400px; /* Set height to 100px to avoid excessive scaling */
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  /* Additional media query for smaller screens (e.g., tablets or mobile) */
+  @media (max-width: 768px) {
+    .carousel-image {
+      width: 80%;  /* Use full width on smaller screens */
+      height: 250px; 
+      margin: auto;
+    }
+  }
+  @media (max-width: 1199px) {
+    .carousel-image {
+      width: 80%;  /* Use full width on smaller screens */
+      height: 250px; 
+      margin: auto;
+      padding: 1\5px;
+    }
+  }
+  
