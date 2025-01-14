@@ -1,0 +1,139 @@
+/* Styling for the register page */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7fafc; 
+  padding: 0;
+  margin-top: 0;
+}
+
+.register-box {
+  background-color: #fefefe; 
+  padding: 2rem;  
+  padding-top: 10px;
+  border-radius: 0.75rem;  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  width: 100%;
+  max-width: 32rem;  
+  margin-top: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.register-box:hover {
+  transform: translateY(0px);  /* Hover effect for the register box */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+.register-heading {
+  margin: 0;
+  width: 100%;
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2b6cb0; 
+  letter-spacing: 1.9px;
+}
+
+/* Label */
+.form-label {
+  display: block;
+  font-size: 1rem;  /* Increased font size */
+  font-weight: 600;
+  color: #2d3748; /* Gray 800 */
+  margin-bottom: 0.5rem;
+}
+
+/* Input Fields */
+.input-field {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;  /* Rounded input corners */
+  border: 1px solid #e2e8f0; /* Gray 300 */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 0.5rem;  /* Added gap between inputs */
+}
+
+.input-field:focus {
+  border-color: #3182ce;  /* Blue 500 */
+  background-color: #e3f8ff; /* Light blue background on focus */
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.4);  /* Blue 400 */
+  outline: none;  /* Remove default outline */
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 1.25rem;
+}
+
+.submit-btn:hover {
+  background-color: #4393e9; /* Darker blue on hover */
+  transform: scale(1.05);  /* Subtle zoom effect */
+}
+
+/* Hover effect */
+.submit-btn:hover.background {
+  color: #2071da; /* Light color change on hover */
+}
+
+.submit-btn:disabled {
+  background-color: #cbd5e0; /* Gray 400 */
+  cursor: not-allowed;
+}
+
+/* Error message */
+.error-text {
+  font-size: 0.875rem;
+  color: #f56565;  /* Red 500 */
+  margin-top: 0.5rem;
+}
+
+/* Message container */
+.message-container {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #4a5568;  /* Gray 700 */
+}
+
+.login-link {
+  font-weight: 600;
+  color: #3182ce; /* Blue 500 */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-link:hover {
+  color: #2b6cb0; /* Darker blue on hover */
+}
+
+/* Additional container styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;  /* Increased gap between form elements */
+}
+
+@media (max-width: 768px) {
+  .register-box {
+      padding: 1.5rem;  /* Adjust padding for smaller screens */
+      max-width: 100%;
+  }
+}
+.submit-btn:hover{
+  background-color: #6c0996;
+  
+}

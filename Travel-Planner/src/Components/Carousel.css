@@ -1,0 +1,42 @@
+body {
+  overflow-x: hidden; 
+}
+
+.carousel-image-container {
+  position: relative; /* To position text on top of the image */
+}
+
+.carousel-image {
+  width: 100%; 
+  height: 300px; 
+  object-fit: fill; 
+  padding: 5px;/* Stretch the image to fit */
+}
+
+
+@media (min-width: 1600px) {
+  .carousel-image {
+    height: 350px; /* Slightly taller for very large screens */
+  }
+}
+
+/* Media query for desktops (1200px to 1599px) */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  .carousel-image {
+    height: 300px;
+  }
+}
+
+/* Media query for tablets and smaller desktops */
+@media (max-width: 1199px) {
+  .carousel-image {
+    height: 250px;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 200px;
+  }
+}

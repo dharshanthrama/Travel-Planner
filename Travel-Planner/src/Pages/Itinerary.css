@@ -1,0 +1,71 @@
+.itinerary-container {
+    font-family: 'Arial, sans-serif';
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    background: none;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .card-details {
+    padding: 15px;
+    background-color: #f4f4f4;
+  }
+  
+  .day-details {
+    margin-bottom: 10px;
+  }
+  
+  .day-details h3 {
+    font-size: 1.2rem;
+    color: #34495e;
+  }
+  
+  .day-details ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .day-details ul li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #e8f6f3;
+    border-radius: 5px;
+  }
